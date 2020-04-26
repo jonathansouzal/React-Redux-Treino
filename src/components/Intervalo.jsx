@@ -7,7 +7,11 @@ export default props => {
         <Card title="Intervalo de Números">
             <span>
                 <strong>Mínimo</strong>
-                <input type="number" value={0}/>
+                <input type="number" value={0} readOnly/>
+            </span>
+            <span>
+                <strong>Máximo</strong>
+                <input type="number" value={10} readOnly/>
             </span>
         </Card>
     )
