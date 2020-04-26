@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    "jshint.enable": false,
+    "standard.enable": false,
+    "tslint.enable": false
+}
