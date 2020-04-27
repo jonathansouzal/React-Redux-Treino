@@ -1,10 +1,8 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import Card from './Card'
 
-export default props => {
-
-    // const min = props.min
-    // const max = props.max
+const Media = props => {
 
     const {min, max} = props
 
@@ -19,3 +17,12 @@ export default props => {
         </Card>
     )
 }
+
+function mapStateToProps(state) {
+    return {
+        min: state.numeros.min,
+        max: state.numeros.max,
+    }
+}
+
+export default connect(mapStateToProps)(Media)
