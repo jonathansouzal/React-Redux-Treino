@@ -1,4 +1,9 @@
-export default function(state, action) {
+const initialState = {
+    min: 10,
+    max: 100
+}
+
+export default function(state = initialState, action) {
        
     switch(action.type) {
         case 'NUM_MIN_ALTERADO':
@@ -12,10 +17,6 @@ export default function(state, action) {
                 max: action.payload
             }
         default:
-            return {
-                min: 10,
-                max: 100
-            }
+            return state
     }
-}
 }
